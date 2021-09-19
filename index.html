@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="app.js"></script>
+    <title>devFinder</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-main">
+        <div class="main-container">
+          <div class="header">
+            <h1 class="heading-primary">devfinder</h1>
+            <div class="mode-switcher">
+            <p class="mode-text">
+              Light</ion-icon>
+            </p>
+            <ion-icon class="mode-icon" name="sunny"></ion-icon></div>
+          </div>
+          <div class="search-bar">
+            <form class="form">
+              <ion-icon class="search-icon" name="search-outline"></ion-icon>
+              <input
+                class="input-search"
+                type="text"
+                placeholder="Search GitHub username..."
+              />
+              <button class="btn-search">Search</button>
+              <p class="error-message">No results</p>
+            </form>
+          </div>
+          <div class="main-info-box">
+            <div class="profile-img-box">
+              <img class="profile-img" src='assets/image.jpg' alt="profile picture"/>
+            </div>
+            <div class="name-date-box">
+              <h2 class="heading-secondary">The Octocat</h2>
+              <p class="join-date">Joined 25 Jan 2011</p>
+              <p class="git-tag">@octocat</p>
+            </div>
+            <p class="bio-text">This profile has no bio</p>
+            <div class="info-boxes">
+              <div class="repos info-box">
+                <p class="repos-text info-box-text">Repos</p>
+                <p class="repos-num info-box-num">8</p>
+              </div>
+              <div class="followers info-box">
+                <p class="followers-text info-box-text">Followers</p>
+                <p class="followers-num info-box-num">3938</p>
+              </div>
+              <div class="Following info-box">
+                <p class="Following-text info-box-text">Following</p>
+                <p class="Following-num info-box-num">9</p>
+              </div>
+            </div>
+            <div class="additional-info-box">
+              <div class="living-place add-info-box">
+                <ion-icon name="navigate" class="additional-icon"></ion-icon>
+                <p class="place-text add-text">San Francisco</p>
+              </div>
+              <div class="twitter add-info-box not-available">
+                <ion-icon name="logo-twitter" class="additional-icon"></ion-icon>
+                <p class="twitter-text add-text">Not Available</p>
+              </div>
+              <div class="website add-info-box">
+                <ion-icon name="link" class="additional-icon"></ion-icon>
+                <a class="link-text add-text">https://github.blog</a>
+              </div>
+              <div class="city add-info-box">
+                <ion-icon name="business" class="additional-icon"></ion-icon>
+                <p class="tag-text add-text">@github</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
